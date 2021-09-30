@@ -15,10 +15,12 @@ def display_integers(number):
 
 @app.route('/<int:number>/odd')
 def display_odds(number):
-    return ""
+    numbers = [str(x) for x in range(1,number+1,2)]
+    return ", ".join(numbers)
 
 @app.route('/<int:number>/even')
 def display_evens(number):
+    numbers = [str(x) for x in range(2,number+1,2)]
     return ""
 
 @app.route('/<int:number>/prime')
