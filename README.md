@@ -1,10 +1,13 @@
 # flask-example
 for SNT
+
 Jenna Berlinberg
+
 September 30th, 2021
 
 
 ### Task:
+
 Create a basic Flask web application:
 
 - Root / is not important :)
@@ -14,8 +17,13 @@ Create a basic Flask web application:
 - /<int:number>/prime will display only prime numbers in that range
 
 There are many ways to achieve this, I just want to see how you would approach the problem.
+
 Feel free to show multiple ways but you can also just leave one which is the best in your opinion.
+
 Consider performance and scalability.
 
 This will give us a base to talk about and maybe remove need to ask certain questions entirely.
+
 Extra points for creating a Dockerfile.
+
+Added Dockerfile, theoretically would work if I set up a container
