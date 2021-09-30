@@ -21,7 +21,7 @@ def display_odds(number):
 @app.route('/<int:number>/even')
 def display_evens(number):
     numbers = [str(x) for x in range(2,number+1,2)]
-    return ""
+    return ", ".join(numbers)
 
 @app.route('/<int:number>/prime')
 def display_primes(number):
