@@ -25,4 +25,18 @@ def display_evens(number):
 
 @app.route('/<int:number>/prime')
 def display_primes(number):
-    return ""
+    #Sieve of Eratosthenes: effecient until number is > 10 mil
+    prime = [True for x in range(number+1)]
+    p = 2
+    while p*p <= number:
+        if prime[p]:
+            for i in range(p*p, number+1, p):
+                prime[i] = False
+        p+=1
+
+    numbers = []
+    for x in range(2, number+1):
+        if prime[x]:
+            numbers.append(str(x))
+
+    return ", ".join(numbers)
